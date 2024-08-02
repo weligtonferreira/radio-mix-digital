@@ -1,13 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/logo-sem-fundo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Radio Mix Digital</title>
   </head>
   <body>
     <div id="root"></div>
+    <script
+      type="text/javascript"
+      src="https://hosted.muses.org/mrp.js"
+    ></script>
+    <script class="player" type="text/javascript">
+      MRP.insert({
+        url: 'https://stm9.painelcast.com:7248/stream//',
+        codec: 'aac',
+        volume: 100,
+        autoplay: true,
+        forceHTML5: true,
+        jsevents: false,
+        buffering: 0,
+        title: 'Web Radio',
+        wmode: 'transparent',
+        skin: 'oldstereo',
+        width: 318,
+        height: 130,
+      });
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
