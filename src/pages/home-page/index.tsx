@@ -28,7 +28,7 @@ export function HomePage() {
                   <a href=''>Home</a>
                 </li>
                 <li className='text-zinc-200 hover:text-zinc-50'>
-                  <a href='#'>Sobre</a>
+                  <a href='#sobre'>Sobre</a>
                 </li>
                 <li className='text-zinc-200 hover:text-zinc-50'>
                   <a href='#servicos'>Serviços</a>
