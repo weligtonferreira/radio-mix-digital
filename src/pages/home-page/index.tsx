@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { HiOutlineSpeakerWave } from 'react-icons/hi2';
 import { IoMenu } from 'react-icons/io5';
 import { PiMusicNotesSimple } from 'react-icons/pi';
@@ -116,6 +117,61 @@ export function HomePage() {
                       nós temos a solução perfeita para você.
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id='contato' className='w-full'>
+          <div className='flex justify-center items-center py-20 gap-28'>
+            <img
+              src='/studio-eudinho-1.jpeg'
+              width={400}
+              alt=''
+              className='rounded-xl'
+            />
+
+            <div className='flex flex-col gap-8 max-w-96'>
+              <h1 className='text-stone-800 text-[42px] font-bold tracking-tight'>
+                Entre em contato
+              </h1>
+
+              <p className='text-stone-800 font-medium'>
+                Fale conosco através do nosso E-mail ou através de nossas redes
+                sociais abaixo:
+              </p>
+
+              <div className='flex gap-2'>
+                <div>
+                  <a
+                    href='https://www.instagram.com/eudinho29/'
+                    target='_blank'
+                  >
+                    <FaInstagram
+                      size={28}
+                      className='hover:text-pink-600 transition-colors'
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href='https://www.facebook.com/people/Francieldo-Ferreira/100081036035738/'
+                    target='_blank'
+                  >
+                    <FaFacebook
+                      size={28}
+                      className='hover:text-sky-700 transition-colors'
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a href='https://www.youtube.com/@eudinho29' target='_blank'>
+                    <FaYoutube
+                      size={28}
+                      className='hover:text-red-600 transition-colors'
+                    />
+                  </a>
                 </div>
               </div>
             </div>
