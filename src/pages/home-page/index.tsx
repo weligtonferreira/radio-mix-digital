@@ -47,9 +47,9 @@ export function HomePage() {
             height={150}
           />
 
-          <div className='flex justify-start items-center w-full h-full'>
+          <div className='flex justify-between items-start md:items-center w-full h-full'>
             <div className='flex flex-col gap-10 h-max mx-12 2xl:mx-28'>
-              <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-zinc-50 border-zinc-50 drop-shadow-sm'>
+              <h1 className='text-4xl sm:text-5xl md:text-6xl mt-8 font-bold text-zinc-50 border-zinc-50 drop-shadow-sm'>
                 Rádio Mix Digital
               </h1>
 
@@ -118,14 +118,14 @@ export function HomePage() {
         </section>
 
         <section id='servicos' className='w-full bg-gray-100'>
-          <div className='flex flex-col justify-center items-center w-full py-16 space-y-14'>
+          <div className='flex flex-col justify-center items-center w-full px-10 py-16 space-y-14'>
             <h1 className='text-stone-900 text-[42px] font-bold tracking-tight'>
               Serviços
             </h1>
 
-            <div className='flex flex-col lg:flex-row justify-center items-center w-full gap-6'>
-              <div className='bg-white max-w-80 rounded-lg min-h-[380px] drop-shadow-xl hover:-translate-y-5 transition duration-300'>
-                <div className='flex flex-col items-center py-16 px-6 gap-20'>
+            <div className='flex flex-wrap justify-center items-center w-full gap-8'>
+              <div className='bg-white max-w-80 rounded-lg min-h-[380px] drop-shadow-xl lg:hover:-translate-y-5 transition duration-300'>
+                <div className='flex flex-col items-center py-16 px-6 gap-20 select-none'>
                   <SlMicrophone size={40} />
 
                   <div className='flex flex-col gap-6'>
@@ -141,8 +141,8 @@ export function HomePage() {
                 </div>
               </div>
 
-              <div className='bg-white max-w-80 rounded-lg min-h-[380px] drop-shadow-xl hover:-translate-y-5 transition duration-300'>
-                <div className='flex flex-col items-center py-16 px-6 gap-20'>
+              <div className='bg-white max-w-80 rounded-lg min-h-[380px] drop-shadow-xl lg:hover:-translate-y-5 transition duration-300'>
+                <div className='flex flex-col items-center py-16 px-6 gap-20 select-none'>
                   <HiOutlineSpeakerWave size={40} />
 
                   <div className='flex flex-col gap-6'>
@@ -158,8 +158,8 @@ export function HomePage() {
                 </div>
               </div>
 
-              <div className='bg-white max-w-80 rounded-lg min-h-[380px] drop-shadow-xl hover:-translate-y-5 transition duration-300'>
-                <div className='flex flex-col items-center py-16 px-6 gap-20'>
+              <div className='bg-white max-w-80 rounded-lg min-h-[380px] drop-shadow-xl lg:hover:-translate-y-5 transition duration-300'>
+                <div className='flex flex-col items-center py-16 px-6 gap-20 select-none'>
                   <PiMusicNotesSimple size={40} />
 
                   <div className='flex flex-col gap-6'>
@@ -179,25 +179,23 @@ export function HomePage() {
         </section>
 
         <section id='contato' className='w-full'>
-          <div className='flex justify-center items-center py-20 gap-28'>
+          <div className='flex flex-col lg:flex-row justify-center items-center px-10 py-20 gap-20 lg:gap-10'>
             <img
               src='/studio-eudinho-1.jpeg'
-              width={400}
-              alt=''
-              className='rounded-xl'
+              alt='Stúdio Eudinho Gravações'
+              className='rounded-xl w-[350px] lg:w-[550px]'
             />
 
-            <div className='flex flex-col gap-8 max-w-96'>
-              <h1 className='text-stone-800 text-[42px] font-bold tracking-tight'>
+            <div className='flex flex-col gap-8'>
+              <h1 className='text-stone-800 text-[30px] md:text-[38px] lg:text-[48px] text-center lg:text-left font-bold tracking-tight'>
                 Entre em contato
               </h1>
 
-              <p className='text-stone-800 font-medium'>
-                Fale conosco através do nosso E-mail ou através de nossas redes
-                sociais abaixo:
+              <p className='text-stone-800 font-medium max-w-96 text-center lg:text-left'>
+                Fale conosco através de nossas redes sociais abaixo:
               </p>
 
-              <div className='flex gap-2'>
+              <div className='flex justify-center lg:justify-normal gap-2'>
                 <div>
                   <a
                     href='https://www.instagram.com/eudinho29/'
