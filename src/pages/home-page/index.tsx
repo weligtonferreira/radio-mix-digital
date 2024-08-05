@@ -58,6 +58,16 @@ export function HomePage() {
                 dentro de toda a nossa programação.
               </p>
             </div>
+
+            <div className='logo-img'>
+              <img
+                src='/radio-mix-digital-logo.jpeg'
+                height={225}
+                width={225}
+                alt='Radio Mix Digital'
+                className='rounded-3xl drop-shadow-lg mr-24 hidden lg:block'
+              />
+            </div>
           </div>
         </div>
       </header>
