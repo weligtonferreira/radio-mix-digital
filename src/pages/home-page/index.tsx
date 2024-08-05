@@ -47,9 +47,9 @@ export function HomePage() {
             height={150}
           />
 
-          <div className='flex justify-between items-start md:items-center w-full h-full'>
+          <div className='flex justify-between items-center w-full h-full'>
             <div className='flex flex-col gap-10 h-max mx-12 2xl:mx-28'>
-              <h1 className='text-4xl sm:text-5xl md:text-6xl mt-8 font-bold text-zinc-50 border-zinc-50 drop-shadow-sm'>
+              <h1 className='text-4xl sm:text-5xl md:text-6xl mt-6 font-bold text-zinc-50 border-zinc-50 drop-shadow-sm'>
                 Rádio Mix Digital
               </h1>
 
