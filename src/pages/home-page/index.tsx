@@ -61,7 +61,52 @@ export function HomePage() {
           </div>
         </div>
       </header>
+
       <main className='flex flex-col justify-center items-center w-full h-auto'>
+        <section className='w-full h-[220px] flex justify-center items-end'></section>
+
+        <div className='flex justify-center bg-white h-full w-full'>
+          <div className='h-px w-11/12 bg-gray-300'></div>
+        </div>
+
+        <section id='sobre' className='w-full'>
+          <div className='flex flex-col justify-center items-center w-full pt-16 pb-28 px-8 space-y-24'>
+            <div className='flex flex-col justify-center items-center gap-6'>
+              <h1 className='text-stone-900 text-[42px] font-bold tracking-tight'>
+                Sobre
+              </h1>
+
+              <p className='text-center'>
+                Estamos situados na cidade de São José de Piranhas - Paraíba.{' '}
+                <br />
+                Contamos com uma programação AO VIVO 24h.
+              </p>
+            </div>
+
+            <div className='flex flex-wrap justify-center gap-12'>
+              <div>
+                <img
+                  src='/condenser-microphone.webp'
+                  alt='Microfone condensador profissional'
+                  className='drop-shadow-lg'
+                />
+              </div>
+
+              <div className='lg:translate-y-10'>
+                <img src='/daw.webp' alt='Daw' className='drop-shadow-lg' />
+              </div>
+
+              <div>
+                <img
+                  src='/soundboard.webp'
+                  alt='Mesa de som'
+                  className='drop-shadow-lg'
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id='servicos' className='w-full bg-gray-100'>
           <div className='flex flex-col justify-center items-center w-full py-16 space-y-14'>
             <h1 className='text-stone-900 text-[42px] font-bold tracking-tight'>
