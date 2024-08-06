@@ -27,28 +27,28 @@ export function Sidebar({ closeSidebar }: SidebarProps) {
       </div>
 
       <div className='flex justify-center items-center h-full'>
-        <ul className='flex flex-col gap-10 text-sky-400 text-4xl font-semibold text-center sidebar-font'>
+        <ul className='flex flex-col gap-10 text-zinc-100 text-4xl font-semibold text-center sidebar-font'>
           <li
             onClick={() => closeSidebar()}
-            className='hover:text-zinc-100 drop-shadow-md transition-colors'
+            className='hover:text-zinc-300 drop-shadow-md transition-colors'
           >
             <a href=''>Home</a>
           </li>
           <li
             onClick={() => closeSidebar()}
-            className='hover:text-zinc-100 drop-shadow-md transition-colors'
+            className='hover:text-zinc-300 drop-shadow-md transition-colors'
           >
             <a href='#sobre'>Sobre</a>
           </li>
           <li
             onClick={() => closeSidebar()}
-            className='hover:text-zinc-100 drop-shadow-md transition-colors'
+            className='hover:text-zinc-300 drop-shadow-md transition-colors'
           >
             <a href='#servicos'>Serviços</a>
           </li>
           <li
             onClick={() => closeSidebar()}
-            className='hover:text-zinc-100 drop-shadow-md transition-colors'
+            className='hover:text-zinc-300 drop-shadow-md transition-colors'
           >
             <a href='#contato'>Contato</a>
           </li>
