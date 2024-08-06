@@ -7,9 +7,11 @@ import { SlMicrophone } from 'react-icons/sl';
 import { Header } from '../../components/header';
 import { Sidebar } from '../../components/sidebar';
 import { Footer } from '../../components/footer';
+import { ArrowUpButton } from '../../components/arrow-up-button';
 
 export function HomePage() {
   const [sidebarIsVisible, setSidebarIsVisible] = useState(false);
+  const [isArrowUpButtonVisible, setIsArrowUpButtonVisible] = useState(false);
 
   function openSidebar() {
     setSidebarIsVisible(true);
@@ -18,6 +20,23 @@ export function HomePage() {
   function closeSidebar() {
     setSidebarIsVisible(false);
   }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scroolPosition = window.scrollY;
+      const targetPosition = 600;
+
+      if (scroolPosition >= targetPosition) {
+        setIsArrowUpButtonVisible(true);
+      } else {
+        setIsArrowUpButtonVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     const musesElement = document.querySelector('.musesStyleReset');
@@ -202,10 +221,7 @@ export function HomePage() {
             </section>
           </main>
 
-          <footer className='w-full'>
-            <div className='flex justify-center h-full w-full'>
-              <div className='h-px w-11/12 bg-gray-300'></div>
-            </div>
+          {isArrowUpButtonVisible && <ArrowUpButton />}
 
           <Footer />
         </>
