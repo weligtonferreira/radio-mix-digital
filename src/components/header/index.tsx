@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-
 import { IoMenu } from 'react-icons/io5';
+
+import './styles.css';
 
 interface HeaderProps {
   openSidebar: () => void;
