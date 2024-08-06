@@ -8,7 +8,7 @@ import { Header } from '../../components/header';
 import { Sidebar } from '../../components/sidebar';
 
 export function HomePage() {
-  const [sidebarIsVisible, setSidebarIsVisible] = useState(true);
+  const [sidebarIsVisible, setSidebarIsVisible] = useState(false);
 
   function openSidebar() {
     setSidebarIsVisible(true);
