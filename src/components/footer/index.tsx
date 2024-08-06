@@ -41,9 +41,11 @@ export function Footer() {
         <div className='h-px w-11/12 bg-gray-300'></div>
       </div>
 
-      <div className='flex flex-col justify-center items-center w-full px-14 py-8 gap-5'>
+      <div className='w-full flex flex-col lg:flex-row justify-center items-center md:gap-1 px-14 py-8'>
         <p className='text-center text-xs md:text-sm lg:text-base'>
           Copyright © 2024 Radio Mix Digital - Todos os direitos reservados.
+        </p>
+        <p className='text-center text-xs md:text-sm lg:text-base'>
           Desenvolvido por{' '}
           <span className='font-bold opacity-80 hover:opacity-100 transition-all'>
             <a
