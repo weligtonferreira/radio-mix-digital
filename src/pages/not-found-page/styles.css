@@ -1,0 +1,17 @@
+.background-image {
+  position: relative;
+}
+
+.background-image::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-image: url('/radio-station-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  filter: brightness(0.6);
+}

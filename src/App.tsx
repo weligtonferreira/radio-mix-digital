@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { HomePage } from './pages/home-page';
-import { ContactPage } from './pages/contact-page';
+import { NotFoundPage } from './pages/not-found-page';
 
 const router = createBrowserRouter([
   {
@@ -9,8 +9,8 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: '/contato',
-    element: <ContactPage />,
+    path: '/*',
+    element: <NotFoundPage />,
   },
 ]);
 
