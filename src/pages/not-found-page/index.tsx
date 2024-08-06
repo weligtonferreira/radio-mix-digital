@@ -4,8 +4,8 @@ export function NotFoundPage() {
   return (
     <>
       <div className='flex justify-center items-center w-screen h-screen text-center background-image'>
-        <div className='w-full h-full backdrop-blur-sm flex justify-center items-center'>
-          <div className='flex flex-col gap-5'>
+        <div className='w-full h-full backdrop-blur-sm flex justify-center items-start md:items-center'>
+          <div className='flex flex-col gap-5 px-4 mt-52 lg:mt-0'>
             <h1 className='text-white text-4xl'>
               Não encontrou o que você queria?
             </h1>
