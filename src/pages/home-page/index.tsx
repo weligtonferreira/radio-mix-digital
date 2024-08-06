@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { HiOutlineSpeakerWave } from 'react-icons/hi2';
 import { PiMusicNotesSimple } from 'react-icons/pi';
@@ -17,6 +17,18 @@ export function HomePage() {
   function closeSidebar() {
     setSidebarIsVisible(false);
   }
+
+  useEffect(() => {
+    const musesElement = document.querySelector('.musesStyleReset');
+
+    if (musesElement) {
+      if (sidebarIsVisible) {
+        musesElement.classList.add('musesStyleReset--hidden');
+      } else {
+        musesElement.classList.remove('musesStyleReset--hidden');
+      }
+    }
+  }, [sidebarIsVisible]);
 
   return (
     <>
