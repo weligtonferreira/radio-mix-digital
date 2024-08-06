@@ -39,3 +39,7 @@ html {
 .musesStyleReset--hidden {
   display: none !important;
 }
+
+.musesStyleReset--moveback {
+  z-index: -1 !important;
+}

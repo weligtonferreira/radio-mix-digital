@@ -38,9 +38,23 @@ export function HomePage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const musesElement = document.querySelector('.musesStyleReset');
+
+    if (musesElement) {
+      if (sidebarIsVisible) {
+        musesElement.classList.add('musesStyleReset--moveback');
+      } else {
+        musesElement.classList.remove('musesStyleReset--moveback');
+      }
+    }
+  }, [sidebarIsVisible]);
+
   return (
     <>
-      <div className='overflow-hidden'>
+      <div
+        className={`overflow-hidden w-full ${sidebarIsVisible ? 'fixed' : ''}`}
+      >
         {sidebarIsVisible && <Sidebar closeSidebar={closeSidebar} />}
 
         <Header openSidebar={openSidebar} />
