@@ -16,7 +16,7 @@ export function Sidebar({ closeSidebar }: SidebarProps) {
 
   return (
     <div
-      className={`fixed w-full h-screen bg-transparent z-10 select-none ${translateX} translate-x transition duration-500 bg-zinc-900/70 backdrop-blur-sm`}
+      className={`fixed w-full h-screen bg-transparent z-10 select-none ${translateX} translate-x transition duration-500 bg-zinc-800`}
     >
       <div className='fixed top-10 right-10'>
         <IoCloseOutline
@@ -27,7 +27,7 @@ export function Sidebar({ closeSidebar }: SidebarProps) {
       </div>
 
       <div className='flex justify-center items-center h-full'>
-        <ul className='flex flex-col gap-10 text-zinc-100 text-4xl font-semibold text-center sidebar-font'>
+        <ul className='flex flex-col gap-10 text-orange-400 text-3xl font-semibold text-center sidebar-font'>
           <li
             onClick={() => closeSidebar()}
             className='hover:text-zinc-300 drop-shadow-md transition-colors'
