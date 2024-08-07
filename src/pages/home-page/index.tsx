@@ -168,7 +168,7 @@ export function HomePage() {
           <section id='contato' className='w-full'>
             <div className='flex flex-col lg:flex-row justify-center items-center px-10 py-20 gap-20 lg:gap-10'>
               <img
-                src='/studio-eudinho-1.jpeg'
+                src='/studio-eudinho-1.webp'
                 alt='Stúdio Eudinho Gravações'
                 className='rounded-xl w-[350px] lg:w-[550px]'
               />
