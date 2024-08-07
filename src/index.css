@@ -31,7 +31,7 @@ html {
 
 .musesStyleReset {
   position: absolute !important;
-  top: 510px !important;
+  top: 740px !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
 }
@@ -42,4 +42,22 @@ html {
 
 .musesStyleReset--moveback {
   z-index: -1 !important;
+}
+
+@media (min-width: 768px) {
+  .musesStyleReset {
+    position: absolute !important;
+    top: 840px !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .musesStyleReset {
+    position: absolute !important;
+    top: 510px !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
 }
