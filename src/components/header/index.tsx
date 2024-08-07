@@ -40,7 +40,7 @@ export function Header({ openSidebar }: HeaderProps) {
 
         <IoMenu
           onClick={() => openSidebar()}
-          className='right-5 top-5 text-zinc-200 hover:text-zinc-100 fixed cursor-pointer visible md:invisible transition-colors'
+          className='right-5 top-5 text-zinc-200 hover:text-zinc-100 fixed cursor-pointer md:hidden transition-colors'
           size={45}
           height={150}
         />
