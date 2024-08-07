@@ -57,11 +57,11 @@ export function Header({ openSidebar }: HeaderProps) {
             </p>
           </div>
 
-          <div className='logo-img'>
+          <div>
             <img
-              src='/radio-mix-digital-logo.jpeg'
-              height={225}
-              width={225}
+              src='/radio-mix-digital-logo.webp'
+              height={250}
+              width={250}
               alt='Radio Mix Digital'
               className='rounded-3xl drop-shadow-lg mr-24 hidden lg:block'
             />
