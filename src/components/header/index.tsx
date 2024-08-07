@@ -17,7 +17,7 @@ export function Header({ openSidebar }: HeaderProps) {
   }, []);
 
   return (
-    <header className='flex justify-center items-start header-image w-full h-[400px]'>
+    <header className='flex justify-center items-start header-image w-full h-[300px] md:h-[400px]'>
       <div
         className={`flex flex-col justify-center items-start h-full w-full ${bgBlur} transition duration-500`}
       >
