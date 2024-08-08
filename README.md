@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+<p align="center">
+  <a href="https://react.dev/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="200" alt="React Logo" /></a>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Rádio Mix Digital 📻️
 
-Currently, two official plugins are available:
+Este site foi desenvolvido para a rádio Rádio Mix Digital. Nele você pode acompanhar a programação da rádio, conhecer os serviços prestados e entrar em contato com o responsável.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Deploy
 
-## Expanding the ESLint configuration
+- [Rádio Mix Digital](https://radiomixdigital.com.br)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 💻 Tecnologias
 
-- Configure the top-level `parserOptions` property like this:
+- [React](https://react.dev/) 
+- [React Router Dom](https://reactrouter.com/en/main)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## ⚙️ Instalação
+
+```bash
+$ npm install or npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 🚀 Executando o app
+
+```bash
+# development
+$ npm run dev
+
+# production mode
+$ npm run build
+```
