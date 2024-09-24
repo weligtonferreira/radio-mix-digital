@@ -11,7 +11,6 @@ import { ArrowUpButton } from '../../components/arrow-up-button';
 
 export function HomePage() {
   const [sidebarIsVisible, setSidebarIsVisible] = useState(false);
-  const [isArrowUpButtonVisible, setIsArrowUpButtonVisible] = useState(false);
 
   function openSidebar() {
     setSidebarIsVisible(true);
@@ -20,23 +19,6 @@ export function HomePage() {
   function closeSidebar() {
     setSidebarIsVisible(false);
   }
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scroolPosition = window.scrollY;
-      const targetPosition = 600;
-
-      if (scroolPosition >= targetPosition) {
-        setIsArrowUpButtonVisible(true);
-      } else {
-        setIsArrowUpButtonVisible(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   useEffect(() => {
     const musesElement = document.querySelector('.musesStyleReset');
@@ -232,7 +214,7 @@ export function HomePage() {
           </section>
         </main>
 
-        {isArrowUpButtonVisible && <ArrowUpButton />}
+        <ArrowUpButton />
 
         <Footer />
       </div>
