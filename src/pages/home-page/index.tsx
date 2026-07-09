@@ -41,8 +41,8 @@ export function HomePage() {
 
         <Header openSidebar={openSidebar} />
 
-        <main className='flex flex-col justify-center items-center w-full h-auto'>
-          <section className='w-full h-[560px] lg:h-[220px] flex justify-center items-start'>
+        <main className='flex flex-col justify-start items-center w-full h-auto'>
+          <section className='w-full h-[510px] lg:h-[220px] flex justify-center items-end py-8'>
             <div>
               <img
                 src='/radio-mix-digital-logo.jpeg'
