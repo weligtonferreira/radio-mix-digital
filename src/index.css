@@ -47,7 +47,7 @@ html {
 @media (min-width: 768px) {
   .musesStyleReset {
     position: absolute !important;
-    top: 840px !important;
+    top: 490px !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
   }
