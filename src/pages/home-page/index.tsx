@@ -42,7 +42,11 @@ export function HomePage() {
         <Header openSidebar={openSidebar} />
 
         <main className='flex flex-col justify-start items-center w-full h-auto'>
-          <section className='w-full h-[510px] lg:h-[220px] flex justify-center items-end py-8'>
+          <section className='w-full h-[580px] lg:h-[250px] flex flex-col justify-end items-center py-8 px-4'>
+            <span className='text-center'>
+              <b>TOQUE</b> no botão ▶︎ para que a música comece a tocar!
+            </span>
+
             <div>
               <img
                 src='/radio-mix-digital-logo.jpeg'
@@ -58,14 +62,18 @@ export function HomePage() {
             <div className='h-px w-11/12 bg-gray-300'></div>
           </div>
 
-          <div className='flex'>
+          <div className='flex flex-col gap-8 px-4 my-10'>
             <iframe
               src='https://player.painelcast.com/player-sonic/6726'
               frameBorder='0'
               width='100%'
               height='105'
-              className='my-10'
+              // className='my-10'
             ></iframe>
+
+            <span className='text-center'>
+              <b>TOQUE</b> no botão ▶︎ para que a música comece a tocar!
+            </span>
 
             {/* <iframe
               src='https://player.painelcast.com/player-premium-background/6726/V1ZWb1UwMUhUa2xVVkZwTlpWUnNOVmRXWkZOalIwbzFUVmhTYUZkSFpEQlhhMlJ6WW0xR1dWVnRhR2xSZWxWNVYyeG9TMkZzY0Zoa00xWmFWMFZLTTFSRVRrdGhSbkJJWWtoYVRWWjZSbmRhVlUxNFlUSkdXRnBJUW10U01GcDZWRVprTkdSc2IzbFBTRkphVjBWd05WZHNaRk5rYlVwMFZXMW9ZVkl3VmpGWk1HTXhZbWM5UFE9PStS/ffffff/2'
