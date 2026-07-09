@@ -46,8 +46,8 @@ export function HomePage() {
             <div>
               <img
                 src='/radio-mix-digital-logo.jpeg'
-                height={320}
-                width={320}
+                height={300}
+                width={300}
                 alt='Radio Mix Digital'
                 className='rounded-3xl mt-6 drop-shadow-lg lg:hidden'
               />
