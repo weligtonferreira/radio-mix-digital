@@ -45,7 +45,7 @@ export function HomePage() {
           <section className='w-full h-[560px] lg:h-[220px] flex justify-center items-start'>
             <div>
               <img
-                src='/radio-mix-digital-logo.webp'
+                src='/radio-mix-digital-logo.jpeg'
                 height={320}
                 width={320}
                 alt='Radio Mix Digital'
@@ -53,6 +53,27 @@ export function HomePage() {
               />
             </div>
           </section>
+
+          <div className='flex justify-center bg-white h-full w-full'>
+            <div className='h-px w-11/12 bg-gray-300'></div>
+          </div>
+
+          <div className='flex'>
+            <iframe
+              src='https://player.painelcast.com/player-sonic/6726'
+              frameborder='0'
+              width='100%'
+              height='105'
+              className='my-10'
+            ></iframe>
+
+            {/* <iframe
+              src='https://player.painelcast.com/player-premium-background/6726/V1ZWb1UwMUhUa2xVVkZwTlpWUnNOVmRXWkZOalIwbzFUVmhTYUZkSFpEQlhhMlJ6WW0xR1dWVnRhR2xSZWxWNVYyeG9TMkZzY0Zoa00xWmFWMFZLTTFSRVRrdGhSbkJJWWtoYVRWWjZSbmRhVlUxNFlUSkdXRnBJUW10U01GcDZWRVprTkdSc2IzbFBTRkphVjBWd05WZHNaRk5rYlVwMFZXMW9ZVkl3VmpGWk1HTXhZbWM5UFE9PStS/ffffff/2'
+              frameborder='0'
+              width='100%'
+              height='600'
+            ></iframe> */}
+          </div>
 
           <div className='flex justify-center bg-white h-full w-full'>
             <div className='h-px w-11/12 bg-gray-300'></div>
