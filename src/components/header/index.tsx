@@ -17,7 +17,7 @@ export function Header({ openSidebar }: HeaderProps) {
   }, []);
 
   return (
-    <header className='flex justify-center items-start header-image w-full h-[300px] md:h-[400px]'>
+    <header className='flex justify-center items-start header-image w-full h-[200px] md:h-[400px]'>
       <div
         className={`flex flex-col justify-center items-start h-full w-full ${bgBlur} transition duration-500`}
       >
@@ -41,17 +41,17 @@ export function Header({ openSidebar }: HeaderProps) {
         <IoMenu
           onClick={() => openSidebar()}
           className='right-5 top-5 text-zinc-200 hover:text-zinc-100 fixed cursor-pointer md:hidden transition-colors'
-          size={45}
+          size={30}
           height={150}
         />
 
         <div className='flex justify-between items-center w-full h-full'>
-          <div className='flex flex-col gap-10 h-max mx-12 2xl:mx-28'>
-            <h1 className='text-4xl sm:text-5xl md:text-6xl mt-6 font-bold text-zinc-50 border-zinc-50 drop-shadow-sm'>
+          <div className='flex flex-col gap-5 md:gap-10 h-max mx-12 2xl:mx-28'>
+            <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-zinc-50 border-zinc-50 drop-shadow-sm'>
               Rádio Mix Digital
             </h1>
 
-            <p className='text-md sm:text-lg md:text-xl text-zinc-100 lg:max-w-[750px] drop-shadow-md'>
+            <p className='text-xs sm:text-lg md:text-xl text-zinc-100 lg:max-w-[750px] drop-shadow-md'>
               Seja bem-vindo ao nosso portal oficial, aqui você fica por dentro
               de toda a nossa programação.
             </p>
