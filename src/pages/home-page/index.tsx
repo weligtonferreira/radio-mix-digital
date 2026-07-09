@@ -61,7 +61,7 @@ export function HomePage() {
           <div className='flex'>
             <iframe
               src='https://player.painelcast.com/player-sonic/6726'
-              frameborder='0'
+              frameBorder='0'
               width='100%'
               height='105'
               className='my-10'
