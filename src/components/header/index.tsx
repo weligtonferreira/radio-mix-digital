@@ -59,7 +59,7 @@ export function Header({ openSidebar }: HeaderProps) {
 
           <div>
             <img
-              src='/radio-mix-digital-logo.webp'
+              src='/radio-mix-digital-logo.jpeg'
               height={250}
               width={250}
               alt='Radio Mix Digital'
